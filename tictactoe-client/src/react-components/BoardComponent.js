@@ -1,42 +1,5 @@
----  
-
-# Author  
-
-John Pittman  
-john@chickendinosaur.com  
-
-# Getting Started  
-
-## Installation
-
-#### npm  
-
-npm install @phunware/tictactoe-server  
-
-## Usage
----  
-
-# Development  
-
-## Installation  
-
-From the project root:
-
-* npm install
-* npm run build
-
-## Commands  
-
-#### Local
-
-npm run:
-
-build, clean, compile, help, init, start, test, compress, publish, update, documentation, set-access, set-author, set-description, set-dist, set-global, set-keywords, set-license, set-main, set-name, set-private, set-repository, set-src, set-test, set-version
-
----  
-
-# License  
-
+/**
+@license
 The MIT License (MIT)
 
 Copyright (c) 2016 John Pittman
@@ -58,3 +21,35 @@ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
 LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
+*/
+
+'use strict';
+
+import { createElement } from 'react-lite';
+
+import TileComponent from './TileComponent.js';
+
+export default function BoardComponent(props) {
+    let board = props.board || [];
+    let numCols = props.numCols || 0;
+    let boardWidth = window.innerWidth > window.innerHeight ? window.innerHeight : window.innerWidth;
+    let gutter = 5;
+    let tileWidth = boardWidth / numCols;
+
+    return (
+        createElement('div', {}, board.map(function(item, index) {
+            let rowIndex = ~~(index / numCols);
+            let colIndex = index % numCols;
+
+            return createElement(TileComponent, {
+                key: index,
+                selectedIndex: index,
+                width: tileWidth,
+                height: tileWidth,
+                xPos: colIndex * tileWidth,
+                yPos: rowIndex * tileWidth,
+                mark: item
+            });
+        }))
+    );
+}

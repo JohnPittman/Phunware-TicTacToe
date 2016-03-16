@@ -1,42 +1,5 @@
----  
-
-# Author  
-
-John Pittman  
-john@chickendinosaur.com  
-
-# Getting Started  
-
-## Installation
-
-#### npm  
-
-npm install @phunware/tictactoe-server  
-
-## Usage
----  
-
-# Development  
-
-## Installation  
-
-From the project root:
-
-* npm install
-* npm run build
-
-## Commands  
-
-#### Local
-
-npm run:
-
-build, clean, compile, help, init, start, test, compress, publish, update, documentation, set-access, set-author, set-description, set-dist, set-global, set-keywords, set-license, set-main, set-name, set-private, set-repository, set-src, set-test, set-version
-
----  
-
-# License  
-
+/**
+@license
 The MIT License (MIT)
 
 Copyright (c) 2016 John Pittman
@@ -58,3 +21,35 @@ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
 LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
+*/
+
+'use strict';
+
+import axios from 'axios';
+import GameStore from './../stores/GameStore.js';
+
+export default new class GameService {
+    checkForWinner() {
+        let gameState = GameStore.getState();
+
+        axios.post('/checkForWinner', {
+            board: gameState.board,
+            numCols: gameState.numBoardCols
+        }, {
+            baseURL: 'http://localhost:3000',
+            responseType: 'json'
+        }).then(function(res) {
+            //console.log(res);
+            if (res.data.winner !== null) {
+                GameStore.dispatch({
+                    type: 'EndGame',
+                    state: {
+                        winner: res.data.winner
+                    }
+                });
+            }
+        }).catch(function(res) {
+            console.log('Error: ' + res);
+        });
+    }
+}

@@ -1,3 +1,5 @@
+Description.  
+
 ---  
 
 # Author  
@@ -11,7 +13,7 @@ john@chickendinosaur.com
 
 #### npm  
 
-npm install @phunware/tictactoe-server  
+npm install @phunware/tictactoe-client  
 
 ## Usage
 ---  

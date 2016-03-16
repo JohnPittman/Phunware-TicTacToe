@@ -25,33 +25,32 @@ SOFTWARE.
 
 'use strict';
 
-const express = require('express');
-const app = express();
-const bodyParser = require('body-parser');
-const path = require('path');
+var express = require('express');
+var app = express();
+var bodyParser = require('body-parser');
+var path = require('path');
 
-const TicTacToeValidator = require('./tictactoe-validator.js');
+var TicTacToeValidator = require('./tictactoe-validator.js');
 
 app.use(express.static(path.join(__dirname, '..', '..', 'tictactoe-client', 'dist')));
-app.use(function(req, res, next) {
-  res.header("Access-Control-Allow-Origin", "*");
-  res.header("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept");
-  next();
+app.use(function (req, res, next) {
+    res.header("Access-Control-Allow-Origin", "*");
+    res.header("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept");
+    next();
 });
 app.use(bodyParser.urlencoded({ extended: true }));
-app.use(bodyParser.json()); 
+app.use(bodyParser.json());
 
-app.get('/', function(req, res) {
+app.get('/', function (req, res) {
     res.sendFile('index.html');
 });
 
-app.post('/checkForWinner', function(req, res) {
-    let winner = null;
-    let board = req.body.board;
-    let numCols = req.body.numCols;
+app.post('/checkForWinner', function (req, res) {
+    var winner = null;
+    var board = req.body.board;
+    var numCols = req.body.numCols;
 
-    if (Array.isArray(board) === true &&
-        numCols > 0) {
+    if (Array.isArray(board) === true && numCols > 0) {
         winner = TicTacToeValidator.checkBoard(board, numCols);
 
         if (winner === null) {
@@ -64,8 +63,8 @@ app.post('/checkForWinner', function(req, res) {
     res.json({
         winner: winner
     });
-})
+});
 
-app.listen(3000, function() {
+app.listen(3000, function () {
     console.log('listening on *:3000');
 });

@@ -1,0 +1,371 @@
+{
+    "project": {},
+    "files": {
+        "src\\_prototypes\\TicTacToe.js": {
+            "name": "src\\_prototypes\\TicTacToe.js",
+            "modules": {},
+            "classes": {},
+            "fors": {},
+            "namespaces": {}
+        },
+        "src\\_prototypes\\TicTacToeBoard.js": {
+            "name": "src\\_prototypes\\TicTacToeBoard.js",
+            "modules": {},
+            "classes": {},
+            "fors": {},
+            "namespaces": {}
+        },
+        "src\\app.js": {
+            "name": "src\\app.js",
+            "modules": {},
+            "classes": {},
+            "fors": {},
+            "namespaces": {}
+        },
+        "src\\tictactoe-validator.js": {
+            "name": "src\\tictactoe-validator.js",
+            "modules": {},
+            "classes": {},
+            "fors": {},
+            "namespaces": {}
+        }
+    },
+    "modules": {},
+    "classes": {},
+    "elements": {},
+    "classitems": [
+        {
+            "file": "src\\_prototypes\\TicTacToe.js",
+            "line": 1,
+            "license": "The MIT License (MIT)\n\nCopyright (c) 2016 John Pittman\n\nPermission is hereby granted, free of charge, to any person obtaining a copy\nof this software and associated documentation files (the \"Software\"), to deal\nin the Software without restriction, including without limitation the rights\nto use, copy, modify, merge, publish, distribute, sublicense, and/or sell\ncopies of the Software, and to permit persons to whom the Software is\nfurnished to do so, subject to the following conditions:\n\nThe above copyright notice and this permission notice shall be included in all\ncopies or substantial portions of the Software.\n\nTHE SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR\nIMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,\nFITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE\nAUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER\nLIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,\nOUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE\nSOFTWARE.",
+            "class": ""
+        },
+        {
+            "file": "src\\_prototypes\\TicTacToe.js",
+            "line": 55,
+            "itemtype": "method",
+            "name": "started",
+            "return": {
+                "description": "",
+                "type": "Boolean"
+            },
+            "class": ""
+        },
+        {
+            "file": "src\\_prototypes\\TicTacToe.js",
+            "line": 63,
+            "itemtype": "method",
+            "name": "started",
+            "params": [
+                {
+                    "name": "value",
+                    "description": "",
+                    "type": "Boolean"
+                }
+            ],
+            "class": ""
+        },
+        {
+            "file": "src\\_prototypes\\TicTacToe.js",
+            "line": 71,
+            "itemtype": "method",
+            "name": "ended",
+            "return": {
+                "description": "",
+                "type": "Boolean"
+            },
+            "class": ""
+        },
+        {
+            "file": "src\\_prototypes\\TicTacToe.js",
+            "line": 79,
+            "itemtype": "method",
+            "name": "ended",
+            "params": [
+                {
+                    "name": "value",
+                    "description": "",
+                    "type": "Boolean"
+                }
+            ],
+            "class": ""
+        },
+        {
+            "file": "src\\_prototypes\\TicTacToe.js",
+            "line": 87,
+            "itemtype": "method",
+            "name": "maxPlayers",
+            "return": {
+                "description": "",
+                "type": "Number"
+            },
+            "class": ""
+        },
+        {
+            "file": "src\\_prototypes\\TicTacToe.js",
+            "line": 95,
+            "itemtype": "method",
+            "name": "maxPlayers",
+            "params": [
+                {
+                    "name": "value",
+                    "description": "",
+                    "type": "Number"
+                }
+            ],
+            "class": ""
+        },
+        {
+            "file": "src\\_prototypes\\TicTacToe.js",
+            "line": 103,
+            "itemtype": "method",
+            "name": "board",
+            "return": {
+                "description": "",
+                "type": "Board"
+            },
+            "class": ""
+        },
+        {
+            "file": "src\\_prototypes\\TicTacToe.js",
+            "line": 111,
+            "itemtype": "method",
+            "name": "board",
+            "params": [
+                {
+                    "name": "value",
+                    "description": "",
+                    "type": "Board"
+                }
+            ],
+            "class": ""
+        },
+        {
+            "file": "src\\_prototypes\\TicTacToe.js",
+            "line": 119,
+            "itemtype": "method",
+            "name": "players",
+            "return": {
+                "description": "",
+                "type": "Array"
+            },
+            "class": ""
+        },
+        {
+            "file": "src\\_prototypes\\TicTacToe.js",
+            "line": 127,
+            "itemtype": "method",
+            "name": "players",
+            "params": [
+                {
+                    "name": "value",
+                    "description": "",
+                    "type": "Array"
+                }
+            ],
+            "class": ""
+        },
+        {
+            "file": "src\\_prototypes\\TicTacToeBoard.js",
+            "line": 1,
+            "license": "The MIT License (MIT)\n\nCopyright (c) 2016 John Pittman\n\nPermission is hereby granted, free of charge, to any person obtaining a copy\nof this software and associated documentation files (the \"Software\"), to deal\nin the Software without restriction, including without limitation the rights\nto use, copy, modify, merge, publish, distribute, sublicense, and/or sell\ncopies of the Software, and to permit persons to whom the Software is\nfurnished to do so, subject to the following conditions:\n\nThe above copyright notice and this permission notice shall be included in all\ncopies or substantial portions of the Software.\n\nTHE SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR\nIMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,\nFITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE\nAUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER\nLIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,\nOUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE\nSOFTWARE.",
+            "class": ""
+        },
+        {
+            "file": "src\\_prototypes\\TicTacToeBoard.js",
+            "line": 110,
+            "description": "For the logic to check winner you can defintely use strings or even\nadd two matices together and then add the rows and column which\nwould be an easier approach but I need to move on and this works for now.",
+            "class": ""
+        },
+        {
+            "file": "src\\_prototypes\\TicTacToeBoard.js",
+            "line": 116,
+            "description": "111\n000\n000",
+            "class": ""
+        },
+        {
+            "file": "src\\_prototypes\\TicTacToeBoard.js",
+            "line": 147,
+            "description": "100\n100\n100",
+            "class": ""
+        },
+        {
+            "file": "src\\_prototypes\\TicTacToeBoard.js",
+            "line": 178,
+            "description": "100\n010\n001",
+            "class": ""
+        },
+        {
+            "file": "src\\_prototypes\\TicTacToeBoard.js",
+            "line": 209,
+            "description": "001\n010\n100",
+            "class": ""
+        },
+        {
+            "file": "src\\_prototypes\\TicTacToeBoard.js",
+            "line": 244,
+            "itemtype": "method",
+            "name": "grid",
+            "return": {
+                "description": "",
+                "type": "Array"
+            },
+            "class": ""
+        },
+        {
+            "file": "src\\_prototypes\\TicTacToeBoard.js",
+            "line": 257,
+            "itemtype": "method",
+            "name": "grid",
+            "params": [
+                {
+                    "name": "value",
+                    "description": "",
+                    "type": "Array"
+                }
+            ],
+            "class": ""
+        },
+        {
+            "file": "src\\_prototypes\\TicTacToeBoard.js",
+            "line": 265,
+            "itemtype": "method",
+            "name": "boardSize",
+            "return": {
+                "description": "",
+                "type": "Number"
+            },
+            "class": ""
+        },
+        {
+            "file": "src\\_prototypes\\TicTacToeBoard.js",
+            "line": 273,
+            "itemtype": "method",
+            "name": "boardSize",
+            "params": [
+                {
+                    "name": "value",
+                    "description": "",
+                    "type": "Number"
+                }
+            ],
+            "class": ""
+        },
+        {
+            "file": "src\\app.js",
+            "line": 1,
+            "license": "The MIT License (MIT)\n\nCopyright (c) 2016 John Pittman\n\nPermission is hereby granted, free of charge, to any person obtaining a copy\nof this software and associated documentation files (the \"Software\"), to deal\nin the Software without restriction, including without limitation the rights\nto use, copy, modify, merge, publish, distribute, sublicense, and/or sell\ncopies of the Software, and to permit persons to whom the Software is\nfurnished to do so, subject to the following conditions:\n\nThe above copyright notice and this permission notice shall be included in all\ncopies or substantial portions of the Software.\n\nTHE SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR\nIMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,\nFITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE\nAUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER\nLIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,\nOUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE\nSOFTWARE.",
+            "class": ""
+        },
+        {
+            "file": "src\\tictactoe-validator.js",
+            "line": 1,
+            "license": "The MIT License (MIT)\n\nCopyright (c) 2016 John Pittman\n\nPermission is hereby granted, free of charge, to any person obtaining a copy\nof this software and associated documentation files (the \"Software\"), to deal\nin the Software without restriction, including without limitation the rights\nto use, copy, modify, merge, publish, distribute, sublicense, and/or sell\ncopies of the Software, and to permit persons to whom the Software is\nfurnished to do so, subject to the following conditions:\n\nThe above copyright notice and this permission notice shall be included in all\ncopies or substantial portions of the Software.\n\nTHE SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR\nIMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,\nFITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE\nAUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER\nLIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,\nOUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE\nSOFTWARE.",
+            "class": ""
+        },
+        {
+            "file": "src\\tictactoe-validator.js",
+            "line": 74,
+            "description": "For the logic to check winner you can defintely use strings or even\nadd two matices together and then add the rows and column which\nwould be an easier approach but I need to move on and this works for now.",
+            "class": ""
+        },
+        {
+            "file": "src\\tictactoe-validator.js",
+            "line": 80,
+            "description": "111\n000\n000",
+            "class": ""
+        },
+        {
+            "file": "src\\tictactoe-validator.js",
+            "line": 106,
+            "description": "100\n100\n100",
+            "class": ""
+        },
+        {
+            "file": "src\\tictactoe-validator.js",
+            "line": 132,
+            "description": "100\n010\n001",
+            "class": ""
+        },
+        {
+            "file": "src\\tictactoe-validator.js",
+            "line": 158,
+            "description": "001\n010\n100",
+            "class": ""
+        }
+    ],
+    "warnings": [
+        {
+            "message": "unknown tag: license",
+            "line": " src\\_prototypes\\TicTacToe.js:1"
+        },
+        {
+            "message": "unknown tag: license",
+            "line": " src\\_prototypes\\TicTacToeBoard.js:1"
+        },
+        {
+            "message": "unknown tag: license",
+            "line": " src\\app.js:1"
+        },
+        {
+            "message": "unknown tag: license",
+            "line": " src\\tictactoe-validator.js:1"
+        },
+        {
+            "message": "Missing item type",
+            "line": " src\\_prototypes\\TicTacToe.js:1"
+        },
+        {
+            "message": "Missing item type",
+            "line": " src\\_prototypes\\TicTacToeBoard.js:1"
+        },
+        {
+            "message": "Missing item type\nFor the logic to check winner you can defintely use strings or even\nadd two matices together and then add the rows and column which\nwould be an easier approach but I need to move on and this works for now.",
+            "line": " src\\_prototypes\\TicTacToeBoard.js:110"
+        },
+        {
+            "message": "Missing item type\n111\n000\n000",
+            "line": " src\\_prototypes\\TicTacToeBoard.js:116"
+        },
+        {
+            "message": "Missing item type\n100\n100\n100",
+            "line": " src\\_prototypes\\TicTacToeBoard.js:147"
+        },
+        {
+            "message": "Missing item type\n100\n010\n001",
+            "line": " src\\_prototypes\\TicTacToeBoard.js:178"
+        },
+        {
+            "message": "Missing item type\n001\n010\n100",
+            "line": " src\\_prototypes\\TicTacToeBoard.js:209"
+        },
+        {
+            "message": "Missing item type",
+            "line": " src\\app.js:1"
+        },
+        {
+            "message": "Missing item type",
+            "line": " src\\tictactoe-validator.js:1"
+        },
+        {
+            "message": "Missing item type\nFor the logic to check winner you can defintely use strings or even\nadd two matices together and then add the rows and column which\nwould be an easier approach but I need to move on and this works for now.",
+            "line": " src\\tictactoe-validator.js:74"
+        },
+        {
+            "message": "Missing item type\n111\n000\n000",
+            "line": " src\\tictactoe-validator.js:80"
+        },
+        {
+            "message": "Missing item type\n100\n100\n100",
+            "line": " src\\tictactoe-validator.js:106"
+        },
+        {
+            "message": "Missing item type\n100\n010\n001",
+            "line": " src\\tictactoe-validator.js:132"
+        },
+        {
+            "message": "Missing item type\n001\n010\n100",
+            "line": " src\\tictactoe-validator.js:158"
+        }
+    ]
+}
