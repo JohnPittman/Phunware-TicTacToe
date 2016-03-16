@@ -29,10 +29,10 @@ import {
     createStore
 }
 from 'redux';
-import {
-    Map
-}
-from 'immutable';
+// import {
+//     Map
+// }
+// from 'immutable';
 
 import GameService from './../services/GameService.js';
 

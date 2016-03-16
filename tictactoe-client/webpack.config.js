@@ -25,6 +25,10 @@ module.exports = {
         new webpack.optimize.DedupePlugin(),
         new webpack.optimize.OccurenceOrderPlugin(),
         new webpack.optimize.AggressiveMergingPlugin(),
-        new webpack.optimize.UglifyJsPlugin({ mangle: true, sourcemap: true })
+        new webpack.optimize.UglifyJsPlugin({
+            mangle: true,
+            sourcemap: true,
+            comments: false
+        })
     ]
 };

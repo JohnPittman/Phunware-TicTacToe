@@ -47,16 +47,27 @@ export default class GameMenuComponent extends React.Component {
             margin: 'auto',
             textAlign: 'center',
             transition: 'all 1s ease',
-            zIndex: 2
+            zIndex: 99
         };
 
-        if(this.props.show === true){
+        if (this.props.show === true) {
             style.top = '0px';
         }
 
         return (
-            createElement('div', {
-                style: style
+            createElement('form', {
+                style: style,
+                onSubmit: function(e) {
+                    e.preventDefault();
+                    e.stopPropagation();
+
+                    GameStore.dispatch({
+                        type: 'NewGame',
+                        state: {
+                            numBoardCols: thisComponent.refs.boardColsInput.value
+                        }
+                    });
+                }
             }, [
                 createElement('input', {
                     style: {
@@ -74,17 +85,6 @@ export default class GameMenuComponent extends React.Component {
                     },
                     type: 'submit',
                     value: 'PLAY GAME',
-                    onMouseup: function(e) {
-                        e.preventDefault();
-                        e.stopPropagation();
-
-                        GameStore.dispatch({
-                            type: 'NewGame',
-                            state: {
-                                numBoardCols: thisComponent.refs.boardColsInput.value
-                            }
-                        });
-                    },
                     min: 0
                 }),
                 createElement('span', {
@@ -100,7 +100,7 @@ export default class GameMenuComponent extends React.Component {
                     style: {
                         display: 'inline-block',
                         margin: 'auto',
-                        width: '20%',
+                        width: '40px',
                         height: '50px',
                         border: 'none',
                         color: 'brown',
@@ -108,10 +108,12 @@ export default class GameMenuComponent extends React.Component {
                         backgroundColor: '#eeeeaa',
                         fontSize: '40px'
                     },
-                    type: 'number',
-                    value: thisComponent.props.numBoardCols,
+                    type: 'text',
+                    value: 1,
                     ref: 'boardColsInput',
-                    required: true
+                    required: true,
+                    maxlength: 1,
+                    autoFocus: true
                 })
             ])
         )
