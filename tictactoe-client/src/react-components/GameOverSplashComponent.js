@@ -40,7 +40,7 @@ export default class GameOverSplaceComponent extends React.Component {
             position: 'absolute',
             width: '100vw',
             height: '100vh',
-            top: window.innerHeight,
+            left: '-100vw',
             backgroundColor: 'rgba(0,0,0,0.2)',
             margin: 'auto',
             textAlign: 'center',
@@ -54,7 +54,7 @@ export default class GameOverSplaceComponent extends React.Component {
         };
 
         if (this.props.show === true) {
-            style.top = 0;
+            style.left = 0;
         }
 
         let winnerText = this.props.winner;
