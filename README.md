@@ -20,3 +20,13 @@
  - Other issues consist setting up debug envrionment to debug both live client using webpack and server using node-inspector.
  - Hadling styling reactjs state has to be easier and I know it can be but it's time to move on.
  - Tons of questions about tools for workflow etc. but the game works.
+
+ Note: The only way the game checks for validation is on the server so it will not end unelss the server is running.
+
+ # Usage
+
+ - Open tictactoe-server
+ - npm install
+ - npm start (starts node with nodemon on localhost:3000)
+
+ Other: You can open tictactoe-client and npm install -> npm start which will launch the webpack dev environment. As long as you have the server started the server uses 'allow-cross-origin' so you can hit the routes in the client dev envrionment since I use the base url on the ajax call. This should be done in config settings somewhere in a real project.
