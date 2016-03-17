@@ -38,6 +38,8 @@ export default class GameMenuComponent extends React.Component {
     render() {
         const thisComponent = this;
 
+        let gameState = GameStore.getState();
+
         let style = {
             position: 'absolute',
             width: '100%',
@@ -109,7 +111,7 @@ export default class GameMenuComponent extends React.Component {
                         fontSize: '40px'
                     },
                     type: 'number',
-                    value: 1,
+                    value: gameState.numBoardCols || 1,
                     ref: 'boardColsInput',
                     required: true,
                     autoFocus: true,
