@@ -100,7 +100,7 @@ export default class GameMenuComponent extends React.Component {
                     style: {
                         display: 'inline-block',
                         margin: 'auto',
-                        width: '40px',
+                        width: '60px',
                         height: '50px',
                         border: 'none',
                         color: 'brown',
@@ -108,12 +108,13 @@ export default class GameMenuComponent extends React.Component {
                         backgroundColor: '#eeeeaa',
                         fontSize: '40px'
                     },
-                    type: 'text',
+                    type: 'number',
                     value: 1,
                     ref: 'boardColsInput',
                     required: true,
-                    maxlength: 1,
-                    autoFocus: true
+                    autoFocus: true,
+                    min: 1,
+                    max: 20
                 })
             ])
         )
