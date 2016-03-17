@@ -25,10 +25,8 @@ SOFTWARE.
 
 'use strict';
 
-var grid = [1, 1, 1, 1, 1, 1, 1, 1, 1];
+var matrix2D = [1, 1, 1, 1, 1, 1, 1, 1, 1];
 var width = 3;
-var startPos = [0, 0];
-var slope = [1, 0];
 
 // Get the index of the row and column from a 1D array.
 function calculateIndex(numCols, row, col) {
@@ -37,7 +35,7 @@ function calculateIndex(numCols, row, col) {
 
 // Could have each value to check relate to a number like empty=0, x=1, o=2.
 // Reset position after.
-function addBoxLine2D(grid, xPos, yPos, slopeX, slopeY, width) {
+function addMatrixLine2D(grid, xPos, yPos, slopeX, slopeY, width) {
     let index = 0;
     let result = 0;
 
@@ -56,5 +54,5 @@ function addBoxLine2D(grid, xPos, yPos, slopeX, slopeY, width) {
     return result;
 }
 
-let lineValue = addBoxLine2D(grid, 0, 2, 1, -1, width);
+let lineValue = addMatrixLine2D(matrix2D, 0, 2, 1, -1, width);
 console.log(lineValue);
