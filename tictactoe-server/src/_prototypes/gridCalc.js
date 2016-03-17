@@ -29,8 +29,8 @@ var matrix2D = [1, 1, 1, 1, 1, 1, 1, 1, 1];
 var width = 3;
 
 // Get the index of the row and column from a 1D array.
-function calculateIndex(numCols, row, col) {
-    return row * numCols + col;
+function calculateIndex(row, col, width) {
+    return row * width + col;
 }
 
 // Could have each value to check relate to a number like empty=0, x=1, o=2.
@@ -43,7 +43,7 @@ function addMatrixLine2D(grid, xPos, yPos, slopeX, slopeY, width) {
         xPos < width &&
         yPos < width
     ) {
-        index = calculateIndex(width, yPos, xPos);
+        index = calculateIndex(yPos, xPos, width);
 
         result += grid[index];
 
