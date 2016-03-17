@@ -15,6 +15,13 @@
             "fors": {},
             "namespaces": {}
         },
+        "src\\_prototypes\\gridCalc.js": {
+            "name": "src\\_prototypes\\gridCalc.js",
+            "modules": {},
+            "classes": {},
+            "fors": {},
+            "namespaces": {}
+        },
         "src\\app.js": {
             "name": "src\\app.js",
             "modules": {},
@@ -252,6 +259,12 @@
             "class": ""
         },
         {
+            "file": "src\\_prototypes\\gridCalc.js",
+            "line": 1,
+            "license": "The MIT License (MIT)\n\nCopyright (c) 2016 John Pittman\n\nPermission is hereby granted, free of charge, to any person obtaining a copy\nof this software and associated documentation files (the \"Software\"), to deal\nin the Software without restriction, including without limitation the rights\nto use, copy, modify, merge, publish, distribute, sublicense, and/or sell\ncopies of the Software, and to permit persons to whom the Software is\nfurnished to do so, subject to the following conditions:\n\nThe above copyright notice and this permission notice shall be included in all\ncopies or substantial portions of the Software.\n\nTHE SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR\nIMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,\nFITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE\nAUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER\nLIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,\nOUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE\nSOFTWARE.",
+            "class": ""
+        },
+        {
             "file": "src\\app.js",
             "line": 1,
             "license": "The MIT License (MIT)\n\nCopyright (c) 2016 John Pittman\n\nPermission is hereby granted, free of charge, to any person obtaining a copy\nof this software and associated documentation files (the \"Software\"), to deal\nin the Software without restriction, including without limitation the rights\nto use, copy, modify, merge, publish, distribute, sublicense, and/or sell\ncopies of the Software, and to permit persons to whom the Software is\nfurnished to do so, subject to the following conditions:\n\nThe above copyright notice and this permission notice shall be included in all\ncopies or substantial portions of the Software.\n\nTHE SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR\nIMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,\nFITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE\nAUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER\nLIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,\nOUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE\nSOFTWARE.",
@@ -305,6 +318,10 @@
         },
         {
             "message": "unknown tag: license",
+            "line": " src\\_prototypes\\gridCalc.js:1"
+        },
+        {
+            "message": "unknown tag: license",
             "line": " src\\app.js:1"
         },
         {
@@ -338,6 +355,10 @@
         {
             "message": "Missing item type\n001\n010\n100",
             "line": " src\\_prototypes\\TicTacToeBoard.js:209"
+        },
+        {
+            "message": "Missing item type",
+            "line": " src\\_prototypes\\gridCalc.js:1"
         },
         {
             "message": "Missing item type",
